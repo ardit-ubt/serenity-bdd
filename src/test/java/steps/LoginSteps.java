@@ -7,7 +7,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 import pages.LoginPage;
 
 /**
- * Created by Ardit Podrimaj
+ * Created by Taulant Dema
  */
 
 @Getter
@@ -17,8 +17,8 @@ public class LoginSteps extends ScenarioSteps {
     LoginPage loginPage;
 
     public void login(){
-        loginPage.getEmailInput().type("your@email.com");
-        loginPage.getPasswordInput().type("your.password");
+        loginPage.getEmailInput().type("geasyy_tuli@hotmail.com");
+        loginPage.getPasswordInput().type("tuli8888");
         loginPage.getLoginButton().click();
     }
 }
