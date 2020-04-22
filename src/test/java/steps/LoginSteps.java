@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import net.thucydides.core.steps.ScenarioSteps;
+import org.openqa.selenium.support.ui.Wait;
 import pages.LoginPage;
 
 /**
@@ -20,5 +21,6 @@ public class LoginSteps extends ScenarioSteps {
         loginPage.getEmailInput().type("your@email.com");
         loginPage.getPasswordInput().type("your.password");
         loginPage.getLoginButton().click();
+        
     }
 }
