@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features ="classpath:features/Login.feature",
-        glue = "classpath:definitions")
+        glue = "classpath:definitions",
+        tags = "@login")
 public class LoginRunner {
 
 }
