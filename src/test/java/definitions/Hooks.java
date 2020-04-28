@@ -12,7 +12,8 @@ public class Hooks {
 
     @Before
     public void setup() {
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\Dell\\Desktop\\testim\\serenity-bdd\\drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","drivers/geckodriver.exe");
+        getWebdriverManager().getWebdriver().manage().window().maximize();
         getWebdriverManager().getWebdriver().get("https://facebook.com");
     }
 }
